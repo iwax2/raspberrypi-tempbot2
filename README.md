@@ -5,15 +5,15 @@ Raspberry PiでIoT温湿度計を作ってみました。
 
 ## 機能
 * スイッチを押すと喋る
-VoiceText Web APIを利用させていただいています。
+ VoiceText Web APIを利用させていただいています。
 * フルカラーLEDでグラデーション
-アノードコモンのフルカラーLEDをPWMで制御しています
+ アノードコモンのフルカラーLEDをPWMで制御しています
 * twitter自動投稿
-トークンは適宜変更が必要です。
+ トークンは適宜変更が必要です。
 
 ## 使い方
-### ボタン機能
-`nohup ./pwm.py &`
+### スイッチ機能
+`pi% nohup ./pwm.py &`
 で実行しておけばフルカラーLEDが自動でグラデーションして、スイッチが押されると
 1. 温度取得
 2. 音声取得
@@ -28,3 +28,11 @@ VoiceText Web APIを利用させていただいています。
 
 ## ポスター
 ![ポスター](poster.png)
+
+## 使用部品
+* Raspberry Pi2 Model B
+* 温湿度計 [USB-RH](https://strawberry-linux.com/catalog/items?code=52001) (Strawberry-Linux) Sensirion SHT-11使用
+* スイッチ ダイソー108円LEDスイッチ？
+* [アノードコモン フルカラーLED](http://www.aitendo.com/product/6926)
+* 抵抗（100Ωx2 330Ωx1 1kΩx1)
+* スピーカー[TPA2006使用　超小型D級アンプキット](http://akizukidenshi.com/catalog/g/gK-08161/) ほか
