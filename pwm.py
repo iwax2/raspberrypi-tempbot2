@@ -150,7 +150,7 @@ if __name__ == '__main__':
                 GPIO.output(LED_R_PORT, GPIO.HIGH)
                 GPIO.output(LED_G_PORT, GPIO.LOW)
                 GPIO.output(LED_B_PORT, GPIO.HIGH)
-                curl = "curl \"https://api.voicetext.jp/v1/tts\" -o \"test.wav\" -u \"63uk3t3qx7d8k7g0:\" -d \"text=" + text + "\" -d \"speaker=haruka\" -d \"pitch=140\" -d \"emotion=happiness\" -d \"emotion_level=3\" -d \"volume=200\""
+                curl = "curl \"https://api.voicetext.jp/v1/tts\" -o \"test.wav\" -u \"xxxx:xxxx\" -d \"text=" + text + "\" -d \"speaker=haruka\" -d \"pitch=140\" -d \"emotion=happiness\" -d \"emotion_level=3\" -d \"volume=200\""
     #            subprocess.check_call(curl.split(" "))
                 subprocess.check_call(curl, shell=True)
                 GPIO.output(LED_R_PORT, GPIO.LOW)
