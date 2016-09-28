@@ -12,7 +12,7 @@ Raspberry PiでIoT温湿度計を作ってみました。
  トークンは適宜変更が必要です。
 
 ## 使い方
-### スイッチ機能
+### スイッチ機能 (pwm.py)
 `pi% nohup ./pwm.py &`
 で実行しておけばフルカラーLEDが自動でグラデーションして、スイッチが押されると
 
@@ -22,7 +22,8 @@ Raspberry PiでIoT温湿度計を作ってみました。
 
 をします。
 
-### twitter-bot機能
+### twitter-bot機能 (sht-21.py)
+~~ファイル名が実情と合ってませんが気にしては負けです~~
 `pi% sudo crontab -e`
 を実行して
 `02 */3  * * *   /home/pi/tempbot/sht-21.py`
