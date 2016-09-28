@@ -1,7 +1,7 @@
 # raspberrypi-tempbot2
 
 Raspberry PiでIoT温湿度計を作ってみました。
-基本的には [raspberrypi-tempbot] と同じですが、デモに使うので一部見栄えをするものに変更しています。
+基本的には [raspberrypi-tempbot](https://github.com/iwax2/raspberrypi-tempbot) と同じですが、デモに使うので一部見栄えをするものに変更しています。
 
 ## 機能
 * スイッチを押すと喋る
